@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle/shield for maskable safe zone -->
+  <rect width="512" height="512" rx="128" fill="url(#greenGrad)"/>
+
+  <!-- Inner Crest Shield -->
+  <path d="M 256 60 Q 380 60 400 160 Q 400 320 256 440 Q 112 320 112 160 Q 132 60 256 60 Z" 
+        fill="url(#shieldGrad)" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" filter="url(#shadow)"/>
+  
+  <path d="M 256 80 Q 364 80 382 170 Q 382 308 256 414 Q 130 308 130 170 Q 148 80 256 80 Z" 
+        fill="none" stroke="#86efac" stroke-width="3" opacity="0.6"/>
+
+  <!-- Football Group in Center -->
+  <g transform="translate(256, 230)">
+    <!-- Ball Outer circle -->
+    <circle r="96" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+    
+    <!-- Central Pentagon -->
+    <polygon points="0,-36 34,-11 21,30 -21,30 -34,-11" fill="#0f172a"/>
+    
+    <!-- Lines radiating to outer points -->
+    <line x1="0" y1="-36" x2="0" y2="-94" stroke="#0f172a" stroke-width="6"/>
+    <line x1="34" y1="-11" x2="89" y2="-28" stroke="#0f172a" stroke-width="6"/>
+    <line x1="21" y1="30" x2="56" y2="78" stroke="#0f172a" stroke-width="6"/>
+    <line x1="-21" y1="30" x2="-56" y2="78" stroke="#0f172a" stroke-width="6"/>
+    <line x1="-34" y1="-11" x2="-89" y2="-28" stroke="#0f172a" stroke-width="6"/>
+
+    <!-- Outer edge pentagons / patches -->
+    <path d="M -30,-91 L 0,-94 L 30,-91 L 18,-68 L -18,-68 Z" fill="#0f172a"/>
+    <path d="M 89,-28 L 94,5 L 68,20 L 52,-15 Z" fill="#0f172a"/>
+    <path d="M -89,-28 L -94,5 L -68,20 L -52,-15 Z" fill="#0f172a"/>
+    <path d="M 56,78 L 26,92 L 15,62 L 48,50 Z" fill="#0f172a"/>
+    <path d="M -56,78 L -26,92 L -15,62 L -48,50 Z" fill="#0f172a"/>
+  </g>
+
+  <!-- Stars or Trophy Ribbon at Bottom -->
+  <g fill="#facc15" stroke="#ca8a04" stroke-width="1.5">
+    <!-- Star 1 -->
+    <polygon points="256,346 261,360 276,360 264,369 268,383 256,374 244,383 248,369 236,360 251,360" />
+    <!-- Star 2 -->
+    <polygon points="214,352 218,363 230,363 220,370 224,381 214,374 204,381 208,370 198,363 210,363" />
+    <!-- Star 3 -->
+    <polygon points="298,352 302,363 314,363 304,370 308,381 298,374 288,381 292,370 282,363 294,363" />
+  </g>
+</svg>

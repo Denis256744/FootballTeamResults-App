@@ -1,0 +1,6 @@
+{
+  "name": "FootballTeamResults",
+  "description": "A comprehensive Android-ready football team results manager with offline storage, match history, live standings, statistics, CSV/JSON export, and PWA support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
